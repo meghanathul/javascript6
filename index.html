@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: blue;"><b><u>FUNCTION</u></b></h1>
+    <h3>##FUNCTION DECLARATION-----------(geting hoisted)</h3>
+    <span>Functin is a pease of coad will be use for reusebality.</span>
+    <pre>
+    Syn:-
+        function functionName(){  //head
+
+            //logic
+        }
+        functionName ()  //function call 
+    </pre>
+    <hr>
+    <h4>1.function without para and without return</h4>
+    <pre>
+    Syn:-
+        function wishHi() {
+        console.log('Hii');
+    }
+    wishHi()
+</pre>
+    <h4>2.function with para and without return</h4>
+    <pre>function add(name) {
+    console.log('Hii');
+}
+wishHi('Meghana')
+</pre>
+
+    <h4>3.function with para and with return</h4>
+    <pre>
+    Syn:-
+        function add (a,b) {
+    return a*b;  // we need to store function in variable
+}
+var result=add(2,5);     //console.log(add(2,5))
+console.log(result)
+</pre>
+<hr>
+    <h3>##FUNCTION EXPRESION</h3>
+    <pre>
+Syn:-
+    add('Meghana')
+    console.log( functionName)
+    function add(name) {
+        console.log('Hii');
+    }
+    
+    
+    var functionName=function(){
+        console.log('hii')
+    }  
+</pre>
+<hr>
+    <h3>##FUNCTION CONSTRUCYTOR</h3>
+    <pre>
+        Syn:-
+var wishHi=new Function ("{console.log('hii')}")
+wishHi()
+
+var add2=new Function('num1','num2','{return num1+num2}')
+console.log(add2(6,7))
+    </pre>
+    <hr>
+    <h3>##IIEF---- it runs as soon as it defined.</h3>
+    <pre>
+    Syn:-
+        ({
+                 function(params)
+             })()
+    </pre>
+    <hr>
+    <h2>FIRST CLASS</h2>
+    <span>
+
+        1.Functin can PASS argument to another function.
+        2. And function can be return by another funnction.
+        3.And function can assign value.
+    </span>
+    <pre>
+Syn:-
+var wish=function(){
+    console.log('hii')
+}
+wish()
+    </pre>
+    <hr>
+    <h2>CALL BACK--- this function pass as an parameter to another function.</h2>
+    <pre>
+Syn:-
+        function submit(maths){
+            maths()
+            console.log('SUBMIT')
+        }
+        function copy(){
+            console.log('COPY')
+        }
+        submit(copy)
+    </pre>
+    <hr>
+    <h2>Higher Order Function</h2>
+    <span>ACCEPT another function as an argument or return function.
+    </span>
+    <pre>
+Syn:-
+        function copy(){
+            console.log('COPY')
+        }
+        submit(copy)</pre>
+    
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>
